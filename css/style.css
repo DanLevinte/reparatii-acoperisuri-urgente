@@ -519,3 +519,22 @@ h2.t { font-size: clamp(30px, 3.6vw, 46px); color: var(--dark); }
 .hero .over { background: rgba(215,25,31,.85); border-color: rgba(255,255,255,.35); }
 .hero .btn-line { background: rgba(0,0,0,.35); }
 .hero h1 span { color: #fff; background: var(--accent); padding: 0 .18em .04em; border-radius: 8px; text-shadow: none; box-decoration-break: clone; -webkit-box-decoration-break: clone; }
+
+/* v6: logo mai mare în header */
+.logo-wrap .logo-img { height: 92px; }
+.logo-tag { font-size: 13px; }
+@media (max-width: 900px) {
+  .logo-wrap .logo-img { height: 54px; }
+  .logo-tag { font-size: 8px; }
+}
+@media (max-width: 640px) {
+  .logo-wrap .logo-img { height: 50px; }
+}
+@media (min-width: 901px) {
+  .logo { padding-right: 16px; }
+  .hd-bar { gap: 12px; padding-left: 30px; }
+  .nav > a, .nav .dd > span { padding-left: 8px; padding-right: 8px; font-size: 15.5px; }
+  .head-call b { font-size: 24px; }
+  .btn-cons { padding: 8px 14px; font-size: 16px; }
+}
+@media (min-width: 901px) and (max-width: 1240px) { .head-call { display: none; } }
